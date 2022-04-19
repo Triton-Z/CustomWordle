@@ -24,13 +24,20 @@ body{
     padding: 23px;
 }
     
-.userInput{
+#userText{
     background-color:black;
     border: 4px solid white;
     border-radius:5px;
     margin-top: 34px;
     width: 187px;
 }
+    
+#userButton{
+    border: 4px solid white; 
+    border-radius:5px;
+    background-color:black;
+    color:white;
+}  
     
   </style>
 </head>
@@ -46,8 +53,8 @@ body{
         <div class = "text"><span id = "x1y1"> - </span><span id = "x2y1"> - </span><span id = "x3y1"> - </span><span id = "x4y1"> - </span><span id = "x5y1"> - </span></div>                                                                                                                    
       </div>
       <br>
-      <input type = "text" class = "userInput" name = "inputContent" value = "">
-      <button class = "userInput">Enter Word</button>
+      <input type = "text" id = "userText" name = "inputContent" value = "">
+      <button id = "userButton">Enter Word</button>
   </center>
 </div>
   
