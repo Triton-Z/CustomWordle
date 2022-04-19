@@ -1,6 +1,6 @@
 var buttonText = document.getElementById("userButton");
 var word = "";
-var yLevel = 1;
+var yLevel = 6;
 function button (){
   if (document.getElementById("userButton").value == "Enter Word")
   {
@@ -13,7 +13,7 @@ function button (){
     for (var xLevel = 1; xLevel<6; xLevel++)
     {
       document.getElementById("x"+xLevel+"y"+yLevel).innerHTML = word.substring(xLevel-1, xLevel);
-      
+      i-=1;
     }
   }
 }
