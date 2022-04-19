@@ -10,10 +10,10 @@ function button (){
       buttonText.innerHTML = "Guess Word";
     } 
   } else {
-    for (var xLevel = 1; xLevel<6; xLevel++)
+    for (var xLevel = 0; xLevel<6; xLevel++)
     {
       document.getElementById("x"+xLevel+"y"+yLevel).innerHTML = word.substring(xLevel, xLevel+1);
-      i-=1;
+      i=-1;
     }
   }
 }
