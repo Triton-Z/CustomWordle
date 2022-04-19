@@ -10,7 +10,7 @@ function button (){
       buttonText.innerHTML = "Guess Word";
     } 
   } else {
-    for (var xLevel = 1; x<6; x++;)
+    for (var xLevel = 1; x<6; x++)
     {
       document.getElementById(xLevel+"x"+yLevel+"y").innerHTML = word.substring(x-1, x);
       
