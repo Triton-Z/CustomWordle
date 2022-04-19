@@ -12,7 +12,7 @@ function button (){
   } else {
     for (var xLevel = 1; xLevel<6; xLevel++)
     {
-      document.getElementById("x"+xLevel+"y"+yLevel).innerHTML = word.substring(x-1, x);
+      document.getElementById("x"+xLevel+"y"+yLevel).innerHTML = word.substring(xLevel-1, xLevel);
       
     }
   }
