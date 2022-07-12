@@ -1,19 +1,10 @@
-var buttonText = document.getElementById("userButton");
-var word = "";
-var yLevel = 6;
-function button (){
-  if (document.getElementById("userButton").value == "Enter Word")
+var wordle = "";
+var y = 6;
+function createWord (){
+  wordle = document.getElementById("userText").value;
+  for (var x = 0; x<6; x++)
   {
-    if (word.length==5)
-    {  
-      word = document.getElementById("userText").value;
-      buttonText.innerHTML = "Guess Word";
-    } 
-  } else {
-    for (var xLevel = 0; xLevel<6; xLevel++)
-    {
-      document.getElementById("x"+xLevel+"y"+yLevel).innerHTML = word.substring(xLevel, xLevel+1);
-      i=-1;
-    }
+   document.getElementById(`x{x}y{y}`).innerHTML = wordle[x];
   }
+  
 }
