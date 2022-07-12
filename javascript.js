@@ -4,7 +4,7 @@ function createWord (){
   wordle = document.getElementById("userText").value;
   for (var x = 0; x<6; x++)
   {
-   document.getElementById($`x{x}y{y}`).innerHTML = wordle[x];
+   document.getElementById(`x${x}y${y}`).innerHTML = wordle[x];
   }
   
 }
