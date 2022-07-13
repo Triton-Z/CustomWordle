@@ -110,7 +110,8 @@ function createWord()
         restartgame();
     }else {
         guessWord();
-    }    
+    }
+document.getElementById("userText").select();
 }
 
 function fiveWordCheck()
