@@ -15,6 +15,15 @@ body{
     font-size:50px;
     user-select: none;
 }
+
+#status{
+  color:white;
+  font-family:monospace;
+  position:fixed;
+  left:10px;
+  top:0px;
+  filter: drop-shadow(0px 0px 7px white); 
+}
 #textContainer{
     filter: drop-shadow(0px 0px 7px white);  
 }
@@ -29,6 +38,7 @@ body{
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    white-space:nowrap;
 }
     
 #userText{
@@ -49,6 +59,7 @@ body{
     color:white;
     font-family:monospace;
     padding: 5px;
+    cursor:pointer;
 }  
  
 @keyframes changeColor {
@@ -78,19 +89,21 @@ body{
 <div id = "textContainer">
   <center>    
       <div id = "border">
-        <div class = "text"><span id = "x1y6"> - </span><span id = "x2y6"> - </span><span id = "x3y6"> - </span><span id = "x4y6"> - </span><span id = "x5y6"> - </span></div>
-        <div class = "text"><span id = "x1y5"> - </span><span id = "x2y5"> - </span><span id = "x3y5"> - </span><span id = "x4y5"> - </span><span id = "x5y5"> - </span></div>
-        <div class = "text"><span id = "x1y4"> - </span><span id = "x2y4"> - </span><span id = "x3y4"> - </span><span id = "x4y4"> - </span><span id = "x5y4"> - </span></div>
-        <div class = "text"><span id = "x1y3"> - </span><span id = "x2y3"> - </span><span id = "x3y3"> - </span><span id = "x4y3"> - </span><span id = "x5y3"> - </span></div>
-        <div class = "text"><span id = "x1y2"> - </span><span id = "x2y2"> - </span><span id = "x3y2"> - </span><span id = "x4y2"> - </span><span id = "x5y2"> - </span></div>
-        <div class = "text"><span id = "x1y1"> - </span><span id = "x2y1"> - </span><span id = "x3y1"> - </span><span id = "x4y1"> - </span><span id = "x5y1"> - </span></div>                                                                                                                    
+        <div class = "text" id = "y6"><span id = "x1y6"> - </span><span id = "x2y6"> - </span><span id = "x3y6"> - </span><span id = "x4y6"> - </span><span id = "x5y6"> - </span></div>
+        <div class = "text" id = "y5"><span id = "x1y5"> - </span><span id = "x2y5"> - </span><span id = "x3y5"> - </span><span id = "x4y5"> - </span><span id = "x5y5"> - </span></div>
+        <div class = "text" id = "y4"><span id = "x1y4"> - </span><span id = "x2y4"> - </span><span id = "x3y4"> - </span><span id = "x4y4"> - </span><span id = "x5y4"> - </span></div>
+        <div class = "text" id = "y3"><span id = "x1y3"> - </span><span id = "x2y3"> - </span><span id = "x3y3"> - </span><span id = "x4y3"> - </span><span id = "x5y3"> - </span></div>
+        <div class = "text" id = "y2"><span id = "x1y2"> - </span><span id = "x2y2"> - </span><span id = "x3y2"> - </span><span id = "x4y2"> - </span><span id = "x5y2"> - </span></div>
+        <div class = "text" id = "y1"><span id = "x1y1"> - </span><span id = "x2y1"> - </span><span id = "x3y1"> - </span><span id = "x4y1"> - </span><span id = "x5y1"> - </span></div>                                                                                                                    
       </div>
       <br>
-      <input type = "text" id = "userText" name = "inputContent" value = "">
+      <input type = "text" id = "userText" name = "inputContent" value = "" oninput = "fiveWordCheck()">
       <button onclick = "createWord()" id = "userButton">Enter Word</button>
   </center>
 </div>
   
+<p id = "status">Status: Not started</p>
+
   <script src="javascript.js">
   </script>
 </body>
