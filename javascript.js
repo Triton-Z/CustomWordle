@@ -80,6 +80,15 @@ if (y>0 === false && guessedWord !== wordle)
 guessedWord = document.getElementById("userText").value = "";
 }
 
+window.onload = function(){
+	window.onkeydown= function(number){
+	   if(number.keyCode === 13)
+       {
+            createWord();
+       }
+    };
+};
+
 function createWord()
 {
     if (mode === "create")
